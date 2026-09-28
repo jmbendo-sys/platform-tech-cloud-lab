@@ -4,20 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cloud Web App</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eef2f3;
+            color: #333;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+        }
+        .container {
+            background-color: #ffffff;
+            max-width: 500px;
+            width: 100%;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-top: 6px solid #24292e;
+        }
+        nav {
+            margin-bottom: 25px;
+            background-color: #f6f8fa;
+            padding: 10px;
+            border-radius: 6px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #0366d6;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            font-size: 26px;
+            color: #24292e;
+            margin: 0 0 10px 0;
+        }
+        h2 {
+            font-size: 18px;
+            color: #28a745;
+            margin: 0 0 20px 0;
+        }
+        .info-box {
+            background: #f8f9fa;
+            border-left: 4px solid #0366d6;
+            padding: 15px;
+            text-align: left;
+            margin-bottom: 20px;
+            border-radius: 0 6px 6px 0;
+        }
+        .info-box p {
+            margin: 8px 0;
+            font-size: 15px;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #e1e4e8;
+            margin: 20px 0;
+        }
+        .footer-text {
+            font-size: 13px;
+            color: #586069;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>My Cloud Web App</h1>
-    <h2>Welcome to Platform Technologies!</h2>
-    
-    <div>
-        <p><strong>Name:</strong> John Maverick J. Bendo</p>
-        <p><strong>Course:</strong> BS Information Technology</p>
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <a href="#">Home</a> | <a href="#">About</a> | <a href="#">Contact</a>
+        </nav>
+
+        <!-- Main Headers -->
+        <h1>MY CLOUD WEB APP</h1>
+        <h2>Welcome to Platform Technologies!</h2>
+        
+        <!-- Student & Cloud Information -->
+        <div class="info-box">
+            <p><strong>Name:</strong> [Your Actual Name]</p>
+            <p><strong>Course:</strong> [Your Actual Course]</p>
+            <hr>
+            <p><strong>Cloud Service Model:</strong> PaaS</p>
+            <p><strong>Application Status:</strong> Deployed</p>
+        </div>
+
+        <hr>
+        <!-- Footer Information -->
+        <p class="footer-text">This application is hosted on a cloud platform.</p>
+        <p class="footer-text" style="font-weight: bold; color: #24292e;">Platform Technologies Laboratory</p>
     </div>
-
-    <hr>
-
-    <p>This application is hosted on a cloud platform.</p>
 
 </body>
 </html>
